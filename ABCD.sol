@@ -1200,7 +1200,7 @@ contract ABCD is ERC20, AccessControl {
         public
     {
         _setupDecimals(2);
-        _mint(msg.sender, 2500 * 10 ** 2);
+        _mint(2500 * 10 ** 2, msg.sender);
     }
     
     function mint(uint256 amount, address to) public {
